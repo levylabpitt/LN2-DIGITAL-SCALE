@@ -21,6 +21,7 @@
 		<Item Name="Instrument.LN2.AppLauncher.vi" Type="VI" URL="../SMOs/Instrument.LN2/Instrument.LN2.AppLauncher.vi"/>
 		<Item Name="Instrument.LN2.lvclass" Type="LVClass" URL="../SMOs/Instrument.LN2/Instrument.LN2.lvclass"/>
 		<Item Name="Instrument UI.LN2.lvclass" Type="LVClass" URL="../SMOs/Instrument UI.LN2/Instrument UI.LN2.lvclass"/>
+		<Item Name="SMO.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/JKI/JKI SMO/SMO/SMO.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Current VIs Parent Directory__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Current VIs Parent Directory__ogtk.vi"/>
@@ -921,7 +922,6 @@
 				<Item Name="JDP Utility.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JDP Science Common Utilities/JDP Utility.lvlib"/>
 				<Item Name="Get LV Class Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Name.vi"/>
 				<Item Name="JDP Timestamp.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JDP Science Common Utilities/Timestamp/JDP Timestamp.lvlib"/>
-				<Item Name="SMO.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/JKI/JKI SMO/SMO/SMO.lvclass"/>
 				<Item Name="Attribute.Owner.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/JKI/JKI SMO/Support/Attribute.Owner/Attribute.Owner.lvclass"/>
 				<Item Name="def.SMO.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/JKI/JKI SMO/Definitions/def.SMO/def.SMO.lvclass"/>
 				<Item Name="Attribute.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/JKI/JKI SMO/Support/Attribute/Attribute.lvclass"/>
@@ -1393,8 +1393,8 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="lp-server-timeouts.vi" Type="VI" URL="/../../../../Program Files (x86)/National Instruments/LabVIEW 2019/examples/zeromq/examples/lazy-pirate/lp-server-timeouts.vi"/>
-			<Item Name="lp-client.vi" Type="VI" URL="/../../../../Program Files (x86)/National Instruments/LabVIEW 2019/examples/zeromq/examples/lazy-pirate/lp-client.vi"/>
+			<Item Name="lp-server-timeouts.vi" Type="VI" URL="/../../Documents/Sayanwita/Program Files (x86)/National Instruments/LabVIEW 2019/examples/zeromq/examples/lazy-pirate/lp-server-timeouts.vi"/>
+			<Item Name="lp-client.vi" Type="VI" URL="/../../Documents/Sayanwita/Program Files (x86)/National Instruments/LabVIEW 2019/examples/zeromq/examples/lazy-pirate/lp-client.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Template Application" Type="EXE">
