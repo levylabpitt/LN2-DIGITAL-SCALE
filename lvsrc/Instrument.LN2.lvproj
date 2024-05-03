@@ -17,11 +17,11 @@
 			<Item Name="buildspec-template.vipt" Type="Document" URL="../../build support/buildspec-template.vipt"/>
 			<Item Name="icon.ico" Type="Document" URL="../../build support/icon.ico"/>
 			<Item Name="Post-Build Custom Action.vi" Type="VI" URL="../../build support/Post-Build Custom Action.vi"/>
+			<Item Name="Build LN2-Scale.vi" Type="VI" URL="../../build support/Build LN2-Scale.vi"/>
 		</Item>
 		<Item Name="Instrument.LN2.AppLauncher.vi" Type="VI" URL="../SMOs/Instrument.LN2/Instrument.LN2.AppLauncher.vi"/>
 		<Item Name="Instrument.LN2.lvclass" Type="LVClass" URL="../SMOs/Instrument.LN2/Instrument.LN2.lvclass"/>
 		<Item Name="Instrument UI.LN2.lvclass" Type="LVClass" URL="../SMOs/Instrument UI.LN2/Instrument UI.LN2.lvclass"/>
-		<Item Name="SMO.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/JKI/JKI SMO/SMO/SMO.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Current VIs Parent Directory__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Current VIs Parent Directory__ogtk.vi"/>
@@ -1132,6 +1132,8 @@
 				<Item Name="52DC21994E7C3E95E01EF5E980EE86B0Get Waveform Type Enum from Data__ogtk.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/_Caraya_internal_deps/52DC21994E7C3E95E01EF5E980EE86B0Get Waveform Type Enum from Data__ogtk.vi"/>
 				<Item Name="52DC21994E7C3E95E01EF5E980EE86B0Get Waveform Type Enum from TD__ogtk.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/_Caraya_internal_deps/52DC21994E7C3E95E01EF5E980EE86B0Get Waveform Type Enum from TD__ogtk.vi"/>
 				<Item Name="52DC21994E7C3E95E01EF5E980EE86B0Resolve Timestamp Format__ogtk.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/_Caraya_internal_deps/52DC21994E7C3E95E01EF5E980EE86B0Resolve Timestamp Format__ogtk.vi"/>
+				<Item Name="SMO.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/JKI/JKI SMO/SMO/SMO.lvclass"/>
+				<Item Name="LMH-Toolbox.lvlib" Type="Library" URL="/&lt;vilib&gt;/MakerHub/Toolbox/LMH-Toolbox.lvlib"/>
 			</Item>
 			<Item Name="_ChannelScriptingSupport.lvlib" Type="Library" URL="/&lt;resource&gt;/ChannelSupport/_ChannelScriptingSupport/_ChannelScriptingSupport.lvlib"/>
 			<Item Name="AB_Build_Invoke_Preview.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Builds/AppBuilder/AB_Build_Invoke_Preview.vi"/>
@@ -1393,17 +1395,17 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="lp-server-timeouts.vi" Type="VI" URL="/../../Documents/Sayanwita/Program Files (x86)/National Instruments/LabVIEW 2019/examples/zeromq/examples/lazy-pirate/lp-server-timeouts.vi"/>
-			<Item Name="lp-client.vi" Type="VI" URL="/../../Documents/Sayanwita/Program Files (x86)/National Instruments/LabVIEW 2019/examples/zeromq/examples/lazy-pirate/lp-client.vi"/>
+			<Item Name="lp-server-timeouts.vi" Type="VI" URL="/../../../../Program Files (x86)/National Instruments/LabVIEW 2019/examples/zeromq/examples/lazy-pirate/lp-server-timeouts.vi"/>
+			<Item Name="lp-client.vi" Type="VI" URL="/../../../../Program Files (x86)/National Instruments/LabVIEW 2019/examples/zeromq/examples/lazy-pirate/lp-client.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="Template Application" Type="EXE">
+			<Item Name="LN2-DIGITAL-SCALE Application" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{D55AD59A-174A-416B-A230-339746A8A588}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{92983E90-CD91-4852-BB47-F001995CB1BC}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{86831795-0243-4CC5-9121-58342B853656}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Template Application</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">LN2-DIGITAL-SCALE Application</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
@@ -1411,40 +1413,50 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{88E83CD0-58AD-4082-9101-73BF80525DFF}</Property>
-				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">Template.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/Application/Template Application.exe</Property>
+				<Property Name="Bld_version.build" Type="Int">5</Property>
+				<Property Name="Bld_version.minor" Type="Int">1</Property>
+				<Property Name="Bld_version.patch" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">LN2-DIGITAL-SCALE.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/Application/LN2-DIGITAL-SCALE Application.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/Application/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/build support/icon.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{74DB9252-305F-4BCC-B3A2-6DC1D847E936}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{5BE82D8B-EA81-40D0-98D0-A9061857788E}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref"></Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Instrument.LN2.AppLauncher.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Instrument.LN2.lvclass</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[2].type" Type="Str">Library</Property>
+				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Instrument UI.LN2.lvclass</Property>
+				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[3].type" Type="Str">Library</Property>
+				<Property Name="SourceCount" Type="Int">4</Property>
 				<Property Name="TgtF_companyName" Type="Str">University of Pittsburgh</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">Template Application</Property>
-				<Property Name="TgtF_internalName" Type="Str">Template Application</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">LN2-DIGITAL-SCALE Application</Property>
+				<Property Name="TgtF_internalName" Type="Str">LN2-DIGITAL-SCALE Application</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2021 University of Pittsburgh</Property>
-				<Property Name="TgtF_productName" Type="Str">Template Application</Property>
+				<Property Name="TgtF_productName" Type="Str">LN2-DIGITAL-SCALE Application</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{4B0B0232-1A0C-4999-AFFC-FDF3A10F7FF0}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">Template.exe</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">LN2-DIGITAL-SCALE.exe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Template Installer" Type="Installer">
-				<Property Name="Destination[0].name" Type="Str">Instrument.Template</Property>
+			<Item Name="LN2-DIGITAL-SCALE Installer" Type="Installer">
+				<Property Name="Destination[0].name" Type="Str">Instrument.LN2</Property>
 				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
-				<Property Name="Destination[0].tag" Type="Str">{A44EEF60-C944-407B-8229-A02A16DDA10F}</Property>
+				<Property Name="Destination[0].tag" Type="Str">{BFDD9F59-DC8F-499C-B259-548B0D60B2CA}</Property>
 				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
 				<Property Name="DestinationCount" Type="Int">1</Property>
 				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[0].productID" Type="Str">{1E3C5D81-5D10-421A-AE16-1FC585D2FB7D}</Property>
-				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Runtime 2019 SP1 f3</Property>
+				<Property Name="DistPart[0].productID" Type="Str">{2BB15880-EA12-40AA-B577-27419E77E2F9}</Property>
+				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Runtime 2019 SP1 f5</Property>
 				<Property Name="DistPart[0].SoftDep[0].exclude" Type="Bool">false</Property>
 				<Property Name="DistPart[0].SoftDep[0].productName" Type="Str">NI ActiveX Container</Property>
 				<Property Name="DistPart[0].SoftDep[0].upgradeCode" Type="Str">{1038A887-23E1-4289-B0BD-0C4B83C6BA21}</Property>
@@ -1486,36 +1498,35 @@
 				<Property Name="DistPartCount" Type="Int">1</Property>
 				<Property Name="INST_author" Type="Str">University of Pittsburgh</Property>
 				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
-				<Property Name="INST_buildLocation" Type="Path">../builds/Installer</Property>
+				<Property Name="INST_buildLocation" Type="Path">../builds/installer</Property>
 				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
-				<Property Name="INST_buildSpecName" Type="Str">Template Installer</Property>
-				<Property Name="INST_defaultDir" Type="Str">{A44EEF60-C944-407B-8229-A02A16DDA10F}</Property>
+				<Property Name="INST_buildSpecName" Type="Str">LN2-DIGITAL-SCALE Installer</Property>
+				<Property Name="INST_defaultDir" Type="Str">{BFDD9F59-DC8F-499C-B259-548B0D60B2CA}</Property>
 				<Property Name="INST_installerName" Type="Str">install.exe</Property>
-				<Property Name="INST_productName" Type="Str">Template</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.0</Property>
+				<Property Name="INST_productName" Type="Str">LN2-DIGITAL-SCALE</Property>
+				<Property Name="INST_productVersion" Type="Str">0.1.2</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
-				<Property Name="InstSpecVersion" Type="Str">19018005</Property>
+				<Property Name="InstSpecVersion" Type="Str">19018009</Property>
 				<Property Name="MSI_arpCompany" Type="Str">University of Pittsburgh</Property>
-				<Property Name="MSI_autoselectDrivers" Type="Bool">true</Property>
-				<Property Name="MSI_distID" Type="Str">{46BC9056-ADCA-41F2-81B6-422059BA591E}</Property>
+				<Property Name="MSI_distID" Type="Str">{B764DB10-6880-45BB-9916-EDD00C81BF4B}</Property>
 				<Property Name="MSI_hideNonRuntimes" Type="Bool">true</Property>
 				<Property Name="MSI_osCheck" Type="Int">0</Property>
-				<Property Name="MSI_upgradeCode" Type="Str">{5CADB7C5-AEFB-467D-8B14-F80C5F78BAE3}</Property>
+				<Property Name="MSI_upgradeCode" Type="Str">{83592F55-62A9-4053-A4CE-153A863F926C}</Property>
 				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
 				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
 				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
 				<Property Name="RegDestCount" Type="Int">1</Property>
-				<Property Name="Source[0].dest" Type="Str">{A44EEF60-C944-407B-8229-A02A16DDA10F}</Property>
-				<Property Name="Source[0].File[0].dest" Type="Str">{A44EEF60-C944-407B-8229-A02A16DDA10F}</Property>
-				<Property Name="Source[0].File[0].name" Type="Str">Template.exe</Property>
+				<Property Name="Source[0].dest" Type="Str">{BFDD9F59-DC8F-499C-B259-548B0D60B2CA}</Property>
+				<Property Name="Source[0].File[0].dest" Type="Str">{BFDD9F59-DC8F-499C-B259-548B0D60B2CA}</Property>
+				<Property Name="Source[0].File[0].name" Type="Str">LN2-DIGITAL-SCALE.exe</Property>
 				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">Template</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">Instrument.Template</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">LN2-DIGITAL-SCALE</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">Instrument.LN2</Property>
 				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
 				<Property Name="Source[0].File[0].tag" Type="Str">{4B0B0232-1A0C-4999-AFFC-FDF3A10F7FF0}</Property>
 				<Property Name="Source[0].FileCount" Type="Int">1</Property>
-				<Property Name="Source[0].name" Type="Str">Template Application</Property>
-				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/Template Application</Property>
+				<Property Name="Source[0].name" Type="Str">LN2-DIGITAL-SCALE Application</Property>
+				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/LN2-DIGITAL-SCALE Application</Property>
 				<Property Name="Source[0].type" Type="Str">EXE</Property>
 				<Property Name="SourceCount" Type="Int">1</Property>
 			</Item>
